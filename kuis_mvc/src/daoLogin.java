@@ -9,7 +9,7 @@ public class daoLogin {
     public daoLogin(){
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            String url = "jdbc:mysql://localhost/film";
+            String url = "jdbc:mysql://localhost/mvc_film";
             koneksi = DriverManager.getConnection(url, "root", "");
             statement = koneksi.createStatement();
         }catch(ClassNotFoundException ex){
